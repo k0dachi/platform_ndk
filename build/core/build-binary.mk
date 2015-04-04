@@ -208,7 +208,7 @@ endif
 
 # By default, perform standards compliant hardening against buffer overflows.
 ifeq ($(LOCAL_FORTIFY_LEVEL),)
-  LOCAL_FORTIFY_LEVEL := 1
+  LOCAL_FORTIFY_LEVEL := 2
 endif
 LOCAL_CFLAGS += -D_FORTIFY_SOURCE=$(LOCAL_FORTIFY_LEVEL)
 
