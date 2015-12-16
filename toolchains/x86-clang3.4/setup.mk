@@ -49,6 +49,7 @@ TARGET_CFLAGS := \
     -target $(LLVM_TRIPLE) \
     -ffunction-sections \
     -funwind-tables \
+    -fstack-check \
     -fstack-protector \
     -fPIC \
     -no-canonical-prefixes
