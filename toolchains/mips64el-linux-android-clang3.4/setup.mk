@@ -57,6 +57,8 @@ TARGET_CFLAGS := \
         -ffunction-sections \
         -funwind-tables \
         -fmessage-length=0 \
+        -fsanitize=bounds \
+        -fsanitize-undefined-trap-on-error \
         -no-canonical-prefixes
 
 TARGET_LDFLAGS += \
