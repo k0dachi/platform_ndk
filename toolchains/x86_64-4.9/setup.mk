@@ -31,6 +31,8 @@ TARGET_CFLAGS := \
     -funwind-tables \
     -fstack-check \
     -fstack-protector-strong \
+    -fsanitize=bounds \
+    -fsanitize-undefined-trap-on-error \
     -no-canonical-prefixes
 
 TARGET_C_INCLUDES := \

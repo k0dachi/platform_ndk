@@ -51,6 +51,8 @@ TARGET_CFLAGS := \
     -fpic \
     -ffunction-sections \
     -funwind-tables \
+    -fsanitize=bounds \
+    -fsanitize-undefined-trap-on-error \
     -fstack-protector-strong \
     -Wno-invalid-command-line-argument \
     -Wno-unused-command-line-argument \
