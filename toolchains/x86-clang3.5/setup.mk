@@ -49,6 +49,8 @@ TARGET_CFLAGS := \
     -target $(LLVM_TRIPLE) \
     -ffunction-sections \
     -funwind-tables \
+    -fsanitize=bounds \
+    -fsanitize-undefined-trap-on-error \
     -fstack-check \
     -fstack-protector-strong \
     -fPIC \
