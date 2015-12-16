@@ -59,6 +59,8 @@ TARGET_CFLAGS := \
         -fmessage-length=0 \
         -Wno-invalid-command-line-argument \
         -Wno-unused-command-line-argument \
+        -fsanitize=bounds \
+        -fsanitize-undefined-trap-on-error \
         -no-canonical-prefixes
 
 TARGET_LDFLAGS += \
