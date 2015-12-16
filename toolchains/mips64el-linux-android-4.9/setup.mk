@@ -34,6 +34,8 @@ TARGET_CFLAGS := \
         -fgcse-after-reload \
         -frerun-cse-after-loop \
         -frename-registers \
+        -fsanitize=bounds \
+        -fsanitize-undefined-trap-on-error \
         -no-canonical-prefixes
 
 TARGET_LDFLAGS := -no-canonical-prefixes

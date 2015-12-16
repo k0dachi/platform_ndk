@@ -29,6 +29,8 @@ TOOLCHAIN_PREFIX := $(TOOLCHAIN_PREBUILT_ROOT)/bin/i686-linux-android-
 TARGET_CFLAGS := \
     -ffunction-sections \
     -funwind-tables \
+    -fsanitize=bounds \
+    -fsanitize-undefined-trap-on-error \
     -no-canonical-prefixes
 
 TARGET_C_INCLUDES := \

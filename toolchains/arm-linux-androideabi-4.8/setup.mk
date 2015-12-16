@@ -27,6 +27,8 @@ TARGET_CFLAGS := \
     -fpic \
     -ffunction-sections \
     -funwind-tables \
+    -fsanitize=bounds \
+    -fsanitize-undefined-trap-on-error \
     -fstack-protector \
     -no-canonical-prefixes
 
